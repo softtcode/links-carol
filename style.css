@@ -1,0 +1,128 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(imagens/girassois.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    padding: 1rem;
+}
+
+#perfil {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 1000px;
+    box-shadow: 0px 8px 16px 0px #0000006b;
+}
+
+.card {
+    background-color: white;
+    width: 90%;
+    max-width: 500px;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 40px;
+    box-shadow: 0px 10px 30px 1px #0000006b;
+}
+
+.conteudo {
+    font-family: Cabin, sans-serif;
+    text-align: center;
+    padding: 3rem;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    padding: 0.50rem;
+}
+
+li a {
+    background-color: rgb(253, 253, 124);
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    display: block;
+    padding: 0.75rem 2rem;
+    border-radius: 50px;
+    box-shadow: 0px 3px 0px 1px #0000006b;
+    transition: all 0.2s;
+    white-space: nowrap;
+}
+
+li a:hover {
+    box-shadow: 0px 3px 11px 1px #0000006b;
+    transform: scale(1.05);
+}
+
+div.redes a {
+    margin: 1rem;
+}
+
+.redes {
+    margin-top: 3rem;
+    white-space: nowrap;
+}
+
+.redes a i {
+    font-size: 30px;
+    color: black;
+    transition: all 0.2s;
+    margin: 0 1rem 0 1rem;
+}
+
+.redes a i:hover {
+    opacity: 60%;
+}
+
+header {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    line-height: 30px;
+}
+
+header h3 {
+    font-weight: lighter;
+}
+
+#blur {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(255, 255, 255, 0.2); /* fundo levemente translúcido */
+    backdrop-filter: blur(6px); /* efeito de desfoque */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+    body {
+        background-attachment: fixed;
+    }
+
+    .card {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    #perfil {
+        width: 180px;
+        height: 180px;
+    }
+
+
+}
